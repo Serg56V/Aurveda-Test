@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+h1, header {
+  margin-bottom: 30px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+li {
+  list-style: none;
+}
+.block {
+  display: grid;
+  grid-template-columns: 68% 32%;
+}
+.answers {
+  display: flex;
+}
+.answer {
+  margin-left: 20px;
+}
+#result, #percent {
+  margin-top: 20px;
+  color:brown;
+}
+
+/* ----- TAB -------*/
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 5px 5px 0 0;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  padding: 6px 12px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+#pitha.tabcontent, #kaptha.tabcontent {
+  display: none;
+}
+
